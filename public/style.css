@@ -17,6 +17,7 @@
   overflow: hidden;
   height: 92vh;
   display: flex;
+  overflow-y: scroll;
 }
 
 .options {
@@ -40,6 +41,7 @@
 
 #show_chat {
   display: none;
+  overflow-y: scroll;
 }
 
 .main-chat-window {
