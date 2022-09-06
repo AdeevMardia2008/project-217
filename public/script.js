@@ -27,7 +27,12 @@ $(function () {
         }
     })
 
-    
+    $("#chat_message").keydown(function (e) {
+        if (e.key ==$("#chat_message").val().length !== 0) {
+            socket.emit("message", $("#chat_message").val());
+            $("#chat_message").val("");
+        }
+    })
 
 })
 
